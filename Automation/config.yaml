@@ -1,0 +1,33 @@
+dev:
+  build_steps:
+    - "npm install"
+    - "npm build"
+  deploy_steps:
+    - "docker build"
+    - "docker run"
+  notifications: true
+  port: 3000
+
+staging:
+  build_steps:
+    - "npm install"
+    - "npm build"
+    - "npm test"
+  deploy_steps:
+    - "docker build"
+    - "docker push"
+    - "kubectl deploy"
+  notifications: true
+  port: 8080
+
+production:
+  build_steps:
+    - "npm install"
+    - "npm build"
+    - "npm test"
+  deploy_steps:
+    - "docker build"
+    - "docker push registry.io/app:latest"
+    - "kubectl deploy --replicas=3"
+  notifications: true
+  port: 443

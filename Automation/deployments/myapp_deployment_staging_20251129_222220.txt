@@ -1,0 +1,23 @@
+===============================================================================
+=== Deployment Log ===
+===============================================================================
+Deployment started at : 2025-11-29 22:22:20
+App Name: myapp
+Environment: staging
+Server: localhost
+Port: 8080
+===============================================================================
+Package Content:
+salah higazy 
+testing deploy script
+===============================================================================
+Stopping current service...
+Backing up current version...
+Deploying new version..
+Starting new service...
+===============================================================================
+Running health checks..
+Health checks failed!
+Deployment Status: Failed due to health check failure.
+Deployment completed at : 2025-11-29 22:22:22
+===============================================================================

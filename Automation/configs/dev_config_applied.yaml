@@ -1,0 +1,8 @@
+build_steps:
+- npm install
+- npm build
+deploy_steps:
+- docker build
+- docker run
+notifications: true
+port: 3000

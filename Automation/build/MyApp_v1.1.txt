@@ -1,0 +1,14 @@
+=== Build Output ===
+Build Details:
+Project Name: MyApp
+Version: 1.1
+source Content:
+int x = 0 ; 
+int y = 5;
+Build Successful!
+
+=== Test Results ===
+Total Tests: 3
+Tests Passed: 2
+Tests Failed: 1
+Build Status: Successful!

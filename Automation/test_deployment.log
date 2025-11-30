@@ -1,0 +1,7 @@
+﻿2025-11-29 10:00:00 - Info - Deployment started
+2025-11-29 10:00:05 - Warning - Low disk space detected
+2025-11-29 10:00:10 - Error - Database connection failed
+2025-11-29 10:00:15 - Debug - Retrying connection
+2025-11-29 10:00:20 - Error - Failed to connect to database
+2025-11-29 10:00:25 - Warning - Service timeout
+2025-11-29 10:00:30 - Info - Deployment completed

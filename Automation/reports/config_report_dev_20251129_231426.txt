@@ -1,0 +1,8 @@
+======================================================================
+Configuration Report - DEV Environment
+======================================================================
+Generated: 2025-11-29 23:14:26
+
+Build Steps: ['npm install', 'npm build']
+Deploy Steps: ['docker build', 'docker run']
+Notifications: True
