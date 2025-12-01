@@ -9,13 +9,13 @@ pipeline {
     environment {
         BUILD_NAME = "MyApp"
         BUILD_VERSION = "1.0"
-        BUILD_DIR = "./build"
+        BUILD_DIR = "./Automation/build"
         DEPLOY_ENV = "staging"
         DEPLOY_SERVER = "localhost"
         DEPLOY_PORT = "8080"
-        TEST_DIR = "./test_results"
-        REPORTS_DIR = "./reports"
-        LOGS_DIR = "./logs"
+        TEST_DIR = "./Automation/test_results"
+        REPORTS_DIR = "./Automation/reports"
+        LOGS_DIR = "./Automation/logs"
         CONFIG_FILE = "config.yaml"
     }
     
