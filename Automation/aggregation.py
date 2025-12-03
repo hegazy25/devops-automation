@@ -139,6 +139,6 @@ if __name__ == "__main__":
     #     exit_code = generate_detailed_report(aggregated_data, args.output)
     else:
         print("Invalid format. Choose 'summary' or 'detailed'.")
-    exit_code = 1
+        exit_code = 1
 
     sys.exit(exit_code)
