@@ -2,25 +2,20 @@
 === Processed Deployment Log ===
 ===============================================================================
 Processing started at : 2025-11-29 22:46:11
-Total Errors Found: 2
-Total Warning Found: 2
+Total Errors Found: 0
+Total Warning Found: 0
 Total infos Found: 2
-Total debug Found: 1
+Total debug Found: 0
 ===============================================================================
 Error Details:
-2025-11-29 10:00:10 - Error - Database connection failed
-2025-11-29 10:00:20 - Error - Failed to connect to database
 
 Warning Details:
-2025-11-29 10:00:05 - Warning - Low disk space detected
-2025-11-29 10:00:25 - Warning - Service timeout
 
 Info Details:
 ﻿2025-11-29 10:00:00 - Info - Deployment started
 2025-11-29 10:00:30 - Info - Deployment completed
 
 Debug Details:
-2025-11-29 10:00:15 - Debug - Retrying connection
 ===============================================================================
 Processing completed at : 2025-11-29 22:46:11
 ===============================================================================
