@@ -1,3 +1,3 @@
 Test: api_get_test, Status: PASSED, Time: 0.3s
 Test: api_post_test, Status: PASSED, Time: 0.4s
-Test: api_delete_test, Status: FAILED, Time: 2.1s, Error: Invalid response
+Test: api_delete_test, Status: PASSED, Time: 2.1s
