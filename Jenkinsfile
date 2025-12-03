@@ -98,7 +98,7 @@ pipeline {
                 echo '=========================================='
                 sh """
                   cd "${env.WORKSPACE}/Automation"
-                  ${PYTHON} aggregation.py --test-dir "${TEST_DIR}" --output "${REPORTS_DIR}" --format detailed
+                  ${PYTHON} aggregation.py --test-dir "${TEST_DIR}" --output "${REPORTS_DIR}" --format summary
                 """
                 echo 'Tests completed'
             }
