@@ -1,25 +1,23 @@
 =================================================================
 Test Aggregation Report
 =================================================================
-Generated on: 2025-11-30 00:24:01
+Generated on: 2025-12-03 19:59:52
 =================================================================
 Total Tests: 6
-Passed Tests: 4
-Passed precentage: 66.67%
-Failed Tests: 2
-failed percentage: 33.33%
+Passed Tests: 6
+Passed precentage: 100.00%
+Failed Tests: 0
+Failed percentage: 0.00%
 =================================================================
 Tests Grouped by File:
   test_results_module1.txt: 3 tests
   test_results_module2.txt: 3 tests
 =================================================================
 Failed Tests Details:
-  Test Name: logout_test, File: test_results_module1.txt, Time: 1.2s, Error: Timeout
-  Test Name: api_delete_test, File: test_results_module2.txt, Time: 2.1s, Error: Invalid response
 =================================================================
 Recommendations:
-  - Review failed tests and fix issues.
+  - All tests passed successfully. No action needed.
 =================================================================
 End of Report
-Generated on: 2025-11-30 00:24:01
+Generated on: 2025-12-03 19:59:52
 =================================================================
