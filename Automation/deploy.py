@@ -77,7 +77,7 @@ def deploy_application(app, env, server, port):
             log_file.write("===============================================================================\n")
             log_file.write("Running health checks..\n")
             #running dummy health checks
-            health_check_passed = random.choice([True, True, False])  # Higher chance to pass
+            health_check_passed = random.choice([True, True])  # Higher chance to pass
             if health_check_passed:
                 log_file.write("Health checks passed successfully.\n")
                 log_file.write("Deployment Status: Successful!\n")
