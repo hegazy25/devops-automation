@@ -9,13 +9,13 @@ pipeline {
     environment {
         BUILD_NAME = "MyApp"
         BUILD_VERSION = "1.0"
-        BUILD_DIR = "./Automation/build"
+        BUILD_DIR = ".\\Automation\\build"
         DEPLOY_ENV = "staging"
         DEPLOY_SERVER = "localhost"
         DEPLOY_PORT = "8080"
-        TEST_DIR = "./Automation/test_results"
-        REPORTS_DIR = "./Automation/reports"
-        LOGS_DIR = "./Automation/logs"
+        TEST_DIR = ".\\Automation\\test_results"
+        REPORTS_DIR = ".\\Automation\\reports"
+        LOGS_DIR = ".\\Automation\\logs"
         CONFIG_FILE = "config.yaml"
     }
     
@@ -42,7 +42,7 @@ pipeline {
                 echo '=========================================='
                 echo 'Stage: Validating Configuration'
                 echo '=========================================='
-                sh 'python ./Automation/config_manager.py --config ${CONFIG_FILE} --env ${DEPLOY_ENV} --action validate'
+                sh 'python .\\Automation\\config_manager.py --config ${CONFIG_FILE} --env ${DEPLOY_ENV} --action validate'
                 echo ' Configuration validation passed'
             }
         }
@@ -52,7 +52,7 @@ pipeline {
                 echo '=========================================='
                 echo 'Stage: Building Application'
                 echo '=========================================='
-                sh 'python ./Automation/build.py --name ${BUILD_NAME} --ver ${BUILD_VERSION} --dir ${BUILD_DIR}'
+                sh 'python .\\Automation\\build.py --name ${BUILD_NAME} --ver ${BUILD_VERSION} --dir ${BUILD_DIR}'
                 echo ' Build completed successfully'
             }
         }
@@ -62,7 +62,7 @@ pipeline {
                 echo '=========================================='
                 echo 'Stage: Generating Build Report'
                 echo '=========================================='
-                sh 'python ./Automation/config_manager.py --config ${CONFIG_FILE} --env ${DEPLOY_ENV} --action report'
+                sh 'python .\\Automation\\config_manager.py --config ${CONFIG_FILE} --env ${DEPLOY_ENV} --action report'
                 echo ' Build report generated'
             }
         }
@@ -72,7 +72,7 @@ pipeline {
                 echo '=========================================='
                 echo 'Stage: Deploying to ${DEPLOY_ENV}'
                 echo '=========================================='
-                sh 'python ./Automation/deploy.py --app ${BUILD_NAME} --env ${DEPLOY_ENV} --server ${DEPLOY_SERVER} --port ${DEPLOY_PORT}'
+                sh 'python .\\Automation\\deploy.py --app ${BUILD_NAME} --env ${DEPLOY_ENV} --server ${DEPLOY_SERVER} --port ${DEPLOY_PORT}'
                 echo ' Deployment completed'
             }
         }
@@ -82,7 +82,7 @@ pipeline {
                 echo '=========================================='
                 echo 'Stage: Running Tests'
                 echo '=========================================='
-                sh 'python ./Automation/aggregation.py --test-dir ${TEST_DIR} --output ${REPORTS_DIR} --format detailed'
+                sh 'python .\\Automation\\aggregation.py --test-dir ${TEST_DIR} --output ${REPORTS_DIR} --format detailed'
                 echo ' Tests completed'
             }
         }
@@ -99,7 +99,7 @@ pipeline {
                     echo "2025-11-30 10:00:10 - Error - Database connection failed" >> deployment.log
                     echo "2025-11-30 10:00:15 - Info - Retrying connection" >> deployment.log
                 '''
-                sh 'python ./Automation/log_processor.py --logfile deployment.log --output ${LOGS_DIR}'
+                sh 'python .\\Automation\\log_processor.py --logfile deployment.log --output ${LOGS_DIR}'
                 echo ' Logs processed'
             }
         }
