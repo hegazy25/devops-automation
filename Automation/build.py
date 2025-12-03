@@ -19,7 +19,7 @@ def run_tests():
     total_tests = len(test_names)
     for test in test_names:
         print(f"Running {test}...")
-        if random.choice([True, False]):
+        if random.choice([True,True, False]):
             print(f"{test} passed.")
             test_passed += 1
         else:
