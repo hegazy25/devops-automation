@@ -17,7 +17,7 @@ pipeline {
         REPORTS_DIR   = "${env.WORKSPACE}/Automation/reports"
         LOGS_DIR      = "${env.WORKSPACE}/Automation/logs"
         CONFIG_FILE   = "${env.WORKSPACE}/Automation/config.yaml"
-        PYTHON        = "python3"   // or "python" if image has that
+        PYTHON        = "python3"
     }
     
     stages {
